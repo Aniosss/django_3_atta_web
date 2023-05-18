@@ -1,0 +1,13 @@
+{% extends "users/layout.html" %}
+{% load static %}
+
+{% block title %}Main{% endblock %}
+{% block content %}
+        <div>
+            <div id="score"></div>
+            <canvas id="tetris" width="240" height="400"></canvas>
+
+
+            <script src="{% static 'users/js/script.js' %}"></script>
+        </div>
+{% endblock %}

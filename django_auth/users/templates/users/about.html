@@ -1,0 +1,47 @@
+{% extends "users/layout.html" %}
+
+{% block title %}Contacts{% endblock %}
+{% block content %}
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Contacts</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+            </div>
+            <h3 class="fs-2">Email</h3>
+            <p>Можете связаться со мной по этой почте</p>
+            <a href="mailto:rom.rodionov48@gmail.com" class="icon-link d-inline-flex align-items-center">
+                rom.rodionov48@gmail.com
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+            </div>
+            <h3 class="fs-2">GitHub</h3>
+            <p>Ссылка на мой GitHub</p>
+            <a href="https://github.com/Aniosss" class="icon-link d-inline-flex align-items-center">
+                Aniosss
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+            </div>
+            <h3 class="fs-2">VK</h3>
+            <p>Ссылка на мои социальные сети</p>
+            <a href="https://vk.com/roman_rodi" class="icon-link d-inline-flex align-items-center">
+                Link
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+        </div>
+    </div>
+</div>
+<p>Количество кликов: <span id="clicks"></span></p>
+<button onclick="incrementClicks()">Увеличить счетчик</button>
+<button onclick="saveClicks()">Сохранить счетчик в cookie</button>
+<button onclick="deleteClicks()">Удалить счетчик из cookie</button>
+{% endblock %}
